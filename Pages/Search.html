@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <iframe src="../Page-Inserts/Navigation.html" frameborder="0" scrolling="no"></iframe>
+    <main>
+        <div class="CenterIt">
+            <div class="Searchbox">
+                <h1>Choose Your Pokémon!!</h1>
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button type="submit">I Choose You!!</button>
+                </form>
+            </div>
+            <div class="SearchedPoke">
+                <div class="SearchedPokeImg">
+                    <img id="pokeImg" width="90%" src="" alt="pokemon image">
+                </div>
+                <div class="SearchedPokeInfo SPI_Padding">
+                    <h2 id="pokeName">Loading...</h2>
+                    <ul>
+                        <li>Type1: <span id="type1"></span></li>
+                        <li>Type2: <span id="type2"></span></li>
+                    </ul>
+                    <div class="buttons">
+                        <a id="moreInfoBtn" href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="SearchByType">
+                <h2>Search By Type</h2>
+                <!-- Include AllTypes content here if applicable -->
+            </div>
+        </div>
+    </main>
+    <script src="../Javascript/Search.js"></script>
+</body>
+</html>
