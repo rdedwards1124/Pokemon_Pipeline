@@ -6,17 +6,39 @@
 }
 
 .SearchedPokemon{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    list-style: none;
+    /* padding-top: 3em; */
+    /* padding-bottom: 3em; */
+    /* background-color: rgb(74, 204, 255); */
 }
 
 .PokemonImage{
-    margin: 0;
-    padding: 0;
+    max-width: 30%;
+    min-width: 200px;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding-top: 4em;
+    padding-bottom: 2em;
+    border: 5px solid black;
+    background-color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .PokemonInfo{
-    margin: 0;
-    padding: 0;
+    width: 60%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+    border: 5px solid black;
+    background-color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
