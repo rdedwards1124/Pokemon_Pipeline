@@ -12,6 +12,8 @@ function getPokemon(searchValue) {
         .then(response => response.json())
         .then(data => {
             const name = data.name || "Loading...";
+            // Grab the name and capitalize the first letter!
+            const name1 = name.charAt(0).toUpperCase() + name.slice(1);
             const imgSrc = data.sprites && data.sprites.other && data.sprites.other["official-artwork"] &&
                 data.sprites.other["official-artwork"].front_default
                 ? data.sprites.other["official-artwork"].front_default
@@ -38,7 +40,7 @@ function getPokemon(searchValue) {
             const spd = data.stats && data.stats[4] && data.stats[4].base_stat 
             const spe = data.stats && data.stats[5] && data.stats[5].base_stat 
 
-            document.getElementById('pokeName').textContent = name;
+            document.getElementById('pokeName').textContent = name1;
             document.getElementById('pokeImg').src = imgSrc;
             document.getElementById('type1').textContent = type1;
             document.getElementById('type2').textContent = type2;
