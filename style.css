@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(74, 204, 255);
 }
 
 h1{
@@ -14,7 +15,7 @@ h1{
     letter-spacing: 4px;
     background-color: red;
     margin: 0;
-    padding-top: 1em;
+    /* padding-top: 1em; */
     color: yellow;
     text-align: center;
     /* Create a text shadow to simulate the text outline (black outline) */
@@ -29,6 +30,20 @@ h1{
     text-align: center;
 }
 
+.Pokeball{
+    margin: 3%;
+    border-radius: 20em;
+}
+
+.BlueBackground{
+    background-color: rgb(74, 204, 255);
+}
+
+.BlackBackground{
+    background-color: black;
+    color: white;
+}
+
 
 
 /*------------------------------------------*/
@@ -36,8 +51,28 @@ h1{
 /*------------------------------------------*/
 
 nav {
-    background-color: #333;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    background-color: #333; /* Optional background color */
+    padding: 1em; /* Optional padding for spacing */
+}
+
+nav ul {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    padding: 10px; /* Optional padding for spacing */
+    list-style: none;
     margin: 0;
+}
+
+nav li{
+    float: right;
+}
+
+nav a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underlines from links */
+    margin-right: 20px; /* Optional margin between items */
 }
 
 @media (max-width: 768px) {
