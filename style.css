@@ -9,15 +9,12 @@ body{
 }
 
 h1{
-    background-color: red;
     margin: 0;
     font-family: 'Pokemon Solid', sans-serif;
     letter-spacing: 4px;
     background-color: red;
-    margin: 0;
     /* padding-top: 1em; */
     color: yellow;
-    text-align: center;
     /* Create a text shadow to simulate the text outline (black outline) */
     text-shadow:
       -3px -3px 0 black,
@@ -26,12 +23,23 @@ h1{
        3px  3px 0 black;
 }
 
+h2{
+    margin: 0;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 4px;
+}
+
+h3{
+    margin: 0;
+}
+
 .CenterIt{
     text-align: center;
 }
 
 .Pokeball{
-    margin: 3%;
+    margin: 3em;
+    width: 30%;
     border-radius: 20em;
 }
 
@@ -42,6 +50,18 @@ h1{
 .BlackBackground{
     background-color: black;
     color: white;
+}
+
+.Padding-2em{
+    padding: 2em;
+}
+
+@media (max-width: 768px) {
+    .Pokeball{
+        margin: 3em;
+        width: 80%;
+        border-radius: 20em;
+    }
 }
 
 
@@ -60,7 +80,7 @@ nav {
 nav ul {
     display: flex; /* Use flexbox to arrange items horizontally */
     justify-content: space-between; /* Distribute items evenly along the horizontal axis */
-    padding: 10px; /* Optional padding for spacing */
+    padding: 0px; /* Optional padding for spacing */
     list-style: none;
     margin: 0;
 }

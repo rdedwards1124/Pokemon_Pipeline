@@ -1,4 +1,17 @@
 
+.HomeImage{
+    height: 0%;
+    width: 70%;
+}
+
 .HomeBottom {
     padding: 2em;
+}
+
+
+@media (max-width: 768px) {
+    .HomeImage{
+        height: 0%;
+        width: 90%;
+    }
 }
